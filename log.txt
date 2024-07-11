@@ -1,0 +1,13 @@
+INFO:root: Synchronization started with the following parameters:
+Source: source
+Replica: replica
+Time interval: 30
+Log file: log.txt
+INFO:root: Creating file replica/abc.txt
+INFO:root: Copying file replica/abc.txt
+INFO:root: Creating folder replica/abc
+INFO:root: Creating folder replica/abc/def
+INFO:root: Copying file replica/abc.txt
+INFO:root: Removing folder replica/abc/def
+INFO:root: Removing file replica/abc.txt
+INFO:root: Removing folder replica/abc

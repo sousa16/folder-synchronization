@@ -126,7 +126,7 @@ def compare_folders(source_folder, replica_folder):
             # Folder in source does not exist in replica - create it
             if not os.path.isdir(replica_file):
                 os.makedirs(replica_file)
-                message = f" Creating folder {replica_file}"
+                message = f" Creating folder {replica_file} - copy of {source_file}"
                 logging.info(message)
                 print(message)
 
@@ -137,14 +137,14 @@ def compare_folders(source_folder, replica_folder):
 
             # If source file does not exist in replica, copy it
             if file not in replica_files:
-                message = f" Creating file {replica_file}"
+                message = f" Creating file {replica_file} - copy of {source_file}"
                 safe_copy(source_file, replica_file)
                 logging.info(message)
                 print(message)
 
             # If source file exists in replica but is different, copy update it
             elif not compare_files(source_file, replica_file):
-                message = f" Copying file {replica_file}"
+                message = f" Updating file {replica_file} to match {source_file}"
                 safe_copy(source_file, replica_file)
                 logging.info(message)
                 print(message)
