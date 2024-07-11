@@ -1,9 +1,0 @@
-INFO:root:Synchronization started with the following parameters:
-Source: source
-Replica: replica
-Time interval: 30
-Log file: log.txt
-INFO:root: Creating file source/test file
-INFO:root: Creating folder source/1
-INFO:root: Creating folder source/1/2
-INFO:root: Creating file source/1/double test file
